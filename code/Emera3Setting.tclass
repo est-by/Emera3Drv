@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Model Company="European System Technologies" xmlns="http://schemas.est.by/objectmodel/root/2010">
+  <ObjectModel>
+    <Namespace Name="Sys.Services.Drv" >
+      
+      <Class Name="Emera3SharedSetting" Area="Public">
+	      <Property Type="Boolean" Name="EnblCounterTariff1" Default="false" CodeSummary="Забирать показания по тарифу 1" /> 
+	      <Property Type="Boolean" Name="EnblCounterTariff2" Default="false" CodeSummary="Забирать показания по тарифу 2" /> 
+	      <Property Type="Boolean" Name="EnblCounterTariff3" Default="false" CodeSummary="Забирать показания по тарифу 3" /> 
+	      <Property Type="Boolean" Name="EnblCounterTariff4" Default="false" CodeSummary="Забирать показания по тарифу 4" /> 
+	      <Property Type="Boolean" Name="EnblCounterTariff5" Default="false" CodeSummary="Забирать показания по тарифу 5" /> 
+	      <Property Type="Boolean" Name="EnblCounterTariff6" Default="false" CodeSummary="Забирать показания по тарифу 6" /> 
+	      <Property Type="Boolean" Name="EnblCounterTariff7" Default="false" CodeSummary="Забирать показания по тарифу 7" /> 
+	      <Property Type="Boolean" Name="EnblCounterTariff8" Default="false" CodeSummary="Забирать показания по тарифу 8" />
+        
+	      <Property Type="Boolean" Name="Enbl30min" Default="true" CodeSummary="Опрос получасов. Если выключен, то запбирать только сутки и месяц." />
+        <Property Type="Boolean" Name="EnblTimeCorr" Default="true" CodeSummary="Включить корректировку времени"/>
+        <Property Type="Boolean" Name="EnblEvents" CodeSummary="Включить опрос событий" Default="false"/>
+        <Property Type="Boolean" Name="EnblIm" CodeSummary="Включить опрос мгновенных значений" Default="false" />
+        <Property Type="ScheduleDbWrap" Name="Arch" CodeSummary="Рассписание синхронизации архивных данных"/>
+        <Property Type="ScheduleDbWrap" Name="Im" CodeSummary="Рассписание чтения мгновенных значений"/>
+      </Class>
+
+      <Class Name="Emera3ContentSetting" Area="Public">
+        <Property Type="Int32" Name="Address" CodeSummary="Адресс прибора в сети"/>
+        <Property Type="String"  Name="Psw" Default="0000" CodeSummary="Пароль по умолчанию"/>
+      </Class>
+
+      <Class Name="Emera3SynchState" Area="Internal" >
+        <Property Type="String" Name="SerialNumber" />
+      </Class>
+    </Namespace>
+  </ObjectModel>
+</Model>

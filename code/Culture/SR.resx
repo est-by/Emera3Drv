@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADJUSTMENT_TIME_BUTTONS" xml:space="preserve">
+    <value>Коррестировка времени кнопками</value>
+  </data>
+  <data name="ADJUSTMENT_TIME_CHANNELS" xml:space="preserve">
+    <value>Коррестировка времени по каналам связи</value>
+  </data>
+  <data name="ADMIN_RESET" xml:space="preserve">
+    <value>Изменение администратора</value>
+  </data>
+  <data name="AOFF" xml:space="preserve">
+    <value>Фаза А:откл</value>
+  </data>
+  <data name="AON" xml:space="preserve">
+    <value>Фаза А:вкл</value>
+  </data>
+  <data name="ARGUMENT" xml:space="preserve">
+    <value>Ошибочный аргумент</value>
+  </data>
+  <data name="AUTO_CALC_SUMMER_SEASON" xml:space="preserve">
+    <value>(авто.расчет сезона лето)</value>
+  </data>
+  <data name="AUTO_CALC_WINTER_SEASON" xml:space="preserve">
+    <value>(авто.расчет сезона зима)</value>
+  </data>
+  <data name="BLOCK_DAMAGED" xml:space="preserve">
+    <value>Блок поврежден</value>
+  </data>
+  <data name="BOFF" xml:space="preserve">
+    <value>Фаза B:откл</value>
+  </data>
+  <data name="BON" xml:space="preserve">
+    <value>Фаза B:вкл</value>
+  </data>
+  <data name="CHAIN_TERM" xml:space="preserve">
+    <value>Обрыв цепей ABC напряжения U или (и) тока I. </value>
+  </data>
+  <data name="CHANGE_PASSWORD" xml:space="preserve">
+    <value>Изменение пароля</value>
+  </data>
+  <data name="CHANGE_SET_TELEMETRY" xml:space="preserve">
+    <value>Изменение параметров телеметрии</value>
+  </data>
+  <data name="CHANGING_CONSTANTS" xml:space="preserve">
+    <value>Изменение констант</value>
+  </data>
+  <data name="CHANGING_DATE_CHANGE_SEASONS" xml:space="preserve">
+    <value>Изменение даты переключения сезонов</value>
+  </data>
+  <data name="CHG_ID" xml:space="preserve">
+    <value>(зав. номер)</value>
+  </data>
+  <data name="CHG_ID_USER" xml:space="preserve">
+    <value>(номер пользователя)</value>
+  </data>
+  <data name="CHG_KI_KU_FORMAT" xml:space="preserve">
+    <value>(KI KU или формат отображения)</value>
+  </data>
+  <data name="CHG_MASK_VIEW" xml:space="preserve">
+    <value>(маска отображения)</value>
+  </data>
+  <data name="CHG_NET_ID" xml:space="preserve">
+    <value>(сетевой адрес)</value>
+  </data>
+  <data name="CHG_PORT_SETT" xml:space="preserve">
+    <value>(параметры порта)</value>
+  </data>
+  <data name="CHG_TYPE_EQUIPMENT" xml:space="preserve">
+    <value>(тип прибора)</value>
+  </data>
+  <data name="CLOSING_COUNTER" xml:space="preserve">
+    <value>Закрытие крышки счетчика</value>
+  </data>
+  <data name="COFF" xml:space="preserve">
+    <value>Фаза C:откл</value>
+  </data>
+  <data name="CON" xml:space="preserve">
+    <value>Фаза C:вкл</value>
+  </data>
+  <data name="CRC" xml:space="preserve">
+    <value>Ошибка контрольной суммы</value>
+  </data>
+  <data name="DAMAGE_CALIBRATION_FILE" xml:space="preserve">
+    <value>Поврежен файл калибровки</value>
+  </data>
+  <data name="DEFECTIVE_EEPROM_1" xml:space="preserve">
+    <value>(Неисправно EEPROM 1)</value>
+  </data>
+  <data name="DEFECTIVE_EEPROM_2" xml:space="preserve">
+    <value>(Неисправно EEPROM 2)</value>
+  </data>
+  <data name="DEFECTIVE_OZU" xml:space="preserve">
+    <value>(Неисправно OЗУ)</value>
+  </data>
+  <data name="DEFECTIVE_PZU" xml:space="preserve">
+    <value>(Неисправно ПЗУ)</value>
+  </data>
+  <data name="DEVICE_BUSY" xml:space="preserve">
+    <value>Счетчик занят</value>
+  </data>
+  <data name="ERROR_CUT" xml:space="preserve">
+    <value>Запрошенный срез отличается от полученного. Возможно это связано с неточным временем</value>
+  </data>
+  <data name="ERROR_DSP" xml:space="preserve">
+    <value>(Ошибка DSP)</value>
+  </data>
+  <data name="ERROR_EXCHANGE_DSP" xml:space="preserve">
+    <value>(Ошибка обмена с DSP)</value>
+  </data>
+  <data name="EVENTS_DESC" xml:space="preserve">
+    <value>Журнал событий</value>
+  </data>
+  <data name="FUNCTION" xml:space="preserve">
+    <value>Неизвестная функция</value>
+  </data>
+  <data name="IM_DESC" xml:space="preserve">
+    <value>Мгновенные значения</value>
+  </data>
+  <data name="MACHINE_ERROR" xml:space="preserve">
+    <value>Аппаратная ошибка</value>
+  </data>
+  <data name="MAX_POWER_RESET" xml:space="preserve">
+    <value>Обнуление максимальной мощности</value>
+  </data>
+  <data name="MEMORY_ERROR" xml:space="preserve">
+    <value>Ошибка памяти</value>
+  </data>
+  <data name="MODE_CHANGE" xml:space="preserve">
+    <value>Изменение режима</value>
+  </data>
+  <data name="M_CALIBRATE" xml:space="preserve">
+    <value>(режим калибровки)</value>
+  </data>
+  <data name="M_NORM" xml:space="preserve">
+    <value>(нормальный режим)</value>
+  </data>
+  <data name="M_VERIFICATION" xml:space="preserve">
+    <value>(режим поверки)</value>
+  </data>
+  <data name="NETWORK_PROBLEMS" xml:space="preserve">
+    <value>Помехи в сети</value>
+  </data>
+  <data name="NOT_COMPLIANT_ADDRESS" xml:space="preserve">
+    <value>Не соответствие запрошенного и ответившего сетевого адреса</value>
+  </data>
+  <data name="NOT_COMPLIANT_FUNCTION" xml:space="preserve">
+    <value>Не соответствие запрошенной и ответившей функции</value>
+  </data>
+  <data name="NOT_PARAM" xml:space="preserve">
+    <value>Прибор '{0}' не подерживает параметр {1}, дискретность {2}{3}. Рекомендуем обновить прошивку прибора</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OPENING_COUNTER" xml:space="preserve">
+    <value>Открытие крышки счетчика</value>
+  </data>
+  <data name="PARAMETER" xml:space="preserve">
+    <value>Неизвестный параметр</value>
+  </data>
+  <data name="POWER_RESET" xml:space="preserve">
+    <value>Обнуление энергии</value>
+  </data>
+  <data name="PR_ACCUM" xml:space="preserve">
+    <value>(накопленный)</value>
+  </data>
+  <data name="PR_DAY" xml:space="preserve">
+    <value>(суточный)</value>
+  </data>
+  <data name="PR_MONTH" xml:space="preserve">
+    <value>(месячный)</value>
+  </data>
+  <data name="PR_YEAR" xml:space="preserve">
+    <value>(годовой)</value>
+  </data>
+  <data name="RESCHEDULE_HOLIDAYS" xml:space="preserve">
+    <value>Изменение расписания выходных дней</value>
+  </data>
+  <data name="SCAN_PASSWORD" xml:space="preserve">
+    <value>Сканирование пароля</value>
+  </data>
+  <data name="SEASON_SUMMER" xml:space="preserve">
+    <value>(сезона лето)</value>
+  </data>
+  <data name="SEASON_WINTER" xml:space="preserve">
+    <value>(сезона зима)</value>
+  </data>
+  <data name="SEGMENTS_RESET" xml:space="preserve">
+    <value>Обнуление срезов</value>
+  </data>
+  <data name="TARIFF_SCHEDULE_CHANGE" xml:space="preserve">
+    <value>Изменение тарифного расписания</value>
+  </data>
+  <data name="Test_DisableProtection" xml:space="preserve">
+    <value>Отключение защиты</value>
+  </data>
+  <data name="Test_DT" xml:space="preserve">
+    <value>Чтение времени</value>
+  </data>
+  <data name="Test_KIKU" xml:space="preserve">
+    <value>Чтение коэф.</value>
+  </data>
+  <data name="Test_KPr" xml:space="preserve">
+    <value>Чтение коэф. преобразования</value>
+  </data>
+  <data name="Test_SN" xml:space="preserve">
+    <value>Чтение серийного номера</value>
+  </data>
+  <data name="Test_SV" xml:space="preserve">
+    <value>Чтение версии</value>
+  </data>
+  <data name="TIME_CLOCK_FAILTURE" xml:space="preserve">
+    <value>Сбой часов реального времени</value>
+  </data>
+  <data name="UNAUTHORIZED" xml:space="preserve">
+    <value>Несанкционированный доступ</value>
+  </data>
+  <data name="WEEKEND_DAYS" xml:space="preserve">
+    <value>(для выходных)</value>
+  </data>
+  <data name="WORKING_DAYS" xml:space="preserve">
+    <value>(для рабочих дней)</value>
+  </data>
+  <data name="READ_IM" xml:space="preserve">
+    <value>Чтение мгновенных значений. Результат: {0}</value>
+  </data>
+  <data name="SYNC_ARCH" xml:space="preserve">
+    <value>Синхронизация архива</value>
+  </data>
+  <data name="Test_Error_Req" xml:space="preserve">
+    <value>Проверка границ архива</value>
+  </data>
+  <data name="ReadKU" xml:space="preserve">
+    <value>Чтение KU:{0}</value>
+  </data>
+  <data name="Read30Min" xml:space="preserve">
+    <value>Чтение 30-и минутных</value>
+  </data>
+  <data name="Read3Min" xml:space="preserve">
+    <value>Чтение 3-х минутных</value>
+  </data>
+  <data name="ReadDay" xml:space="preserve">
+    <value>Чтение суточных</value>
+  </data>
+  <data name="ReadHoles" xml:space="preserve">
+    <value>Получение дыр: От времени {0} Глубиной:{1} До макс.времени:{2} =&gt;выч.нач.время:{3} дыр:{4}</value>
+  </data>
+  <data name="ReadMonth" xml:space="preserve">
+    <value>Чтение месячных</value>
+  </data>
+  <data name="ReadYear" xml:space="preserve">
+    <value>Чтение годовых</value>
+  </data>
+  <data name="INVALID_FORMAT" xml:space="preserve">
+    <value>Неверный формат пакета</value>
+  </data>
+  <data name="NOT_CORRESPOND_TO_CONFIG" xml:space="preserve">
+    <value>Текущая конфигурация не позволяет выполнение команды</value>
+  </data>
+  <data name="OPTOPORT_ERROR" xml:space="preserve">
+    <value>Для работы с оптопортом нажмите кнопку Доступ</value>
+  </data>
+  <data name="UNACCEPTABLE_TARIFF" xml:space="preserve">
+    <value>Недопустиммая тарифная программа</value>
+  </data>
+  <data name="PACKET_LENGTH_ABNORMAL" xml:space="preserve">
+    <value>Ненормальная длина пакета</value>
+  </data>
+</root>
