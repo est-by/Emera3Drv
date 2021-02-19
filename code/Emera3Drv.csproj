@@ -97,16 +97,13 @@
     <Compile Include="Def\Power.cs" />
     <Compile Include="Def\Query.cs" />
     <Compile Include="Def\TypeInc.cs" />
+    <Compile Include="Emera3DriverImpl.cs" />
     <Compile Include="Emera3Setting.cs">
-      <DependentUpon>Emera3Setting.tclass</DependentUpon>
-    </Compile>
-    <Compile Include="EmeraDriverImpl.cs" />
-    <Compile Include="EmeraSetting.cs">
       <DependentUpon>Emera3Setting.tclass</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TL.cs" />
-    <Compile Include="Transport\EmeraRequest.cs" />
+    <Compile Include="Transport\Emera3Request.cs" />
     <Compile Include="Utils\BitwiseUtils.cs" />
     <Compile Include="Utils\CRC.cs" />
     <Compile Include="Utils\ErrorsDescription.cs" />

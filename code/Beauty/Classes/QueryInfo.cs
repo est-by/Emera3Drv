@@ -26,14 +26,14 @@ namespace Sys.Services.Drv.Emera3
         public string DeviceConfiguration { get; private set; }
         public double DeviceKoef { get; private set; }
         public bool IsHalfHourInterval { get; private set; }
-        public EmeraRequest Request { get; private set; }
+        public Emera3Request Request { get; private set; }
         public IIODriverClient DataBus { get; private set; }
-        public EmeraSharedSetting Ss { get; private set; }
-        public EmeraContentSetting Cs { get; private set; }
+        public Emera3SharedSetting Ss { get; private set; }
+        public Emera3ContentSetting Cs { get; private set; }
         public AccountNextPoint NextPoint { get; private set; }
         public DriverSetting DriverSetting { get; private set; }
         public ElectroChannel ElectroChannel { get; private set; }
-        public PhysicalSession<EmeraSynchState, AccountNextPoint> Session { get; private set; }
+        public PhysicalSession<Emera3SynchState, AccountNextPoint> Session { get; private set; }
         /// <summary>
         /// текущее время в локале прибора
         /// </summary>
@@ -45,20 +45,20 @@ namespace Sys.Services.Drv.Emera3
             }
         }
 
-        private EmeraDriver driver;
+        private Emera3Driver driver;
 
         public QueryInfo(
-          EmeraDriver driver,
+          Emera3Driver driver,
           SynchRequestDataDrv requestData,
           SynchParamsDataDrv requestParam,
-          EmeraSharedSetting ss,
-          EmeraContentSetting cs,
+          Emera3SharedSetting ss,
+          Emera3ContentSetting cs,
           DriverSetting driverSetting)
         {
             RequestData = requestData;
             RequestParam = requestParam;
             this.driver = driver;
-            Request = new EmeraRequest(driver, driverSetting, driver.ReadTimeOutRequestMSec());
+            Request = new Emera3Request(driver, driverSetting, driver.ReadTimeOutRequestMSec());
             DriverSetting = driverSetting;
             DataBus = driver.Channel;
             Ss = ss;
@@ -143,7 +143,7 @@ namespace Sys.Services.Drv.Emera3
             return holes;
         }
 
-        internal void SetSession(PhysicalSession<EmeraSynchState, AccountNextPoint> session)
+        internal void SetSession(PhysicalSession<Emera3SynchState, AccountNextPoint> session)
         {
             Session = session;
         }

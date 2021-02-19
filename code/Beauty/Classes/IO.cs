@@ -267,7 +267,7 @@ namespace Sys.Services.Drv.Emera3
         #endregion
 
         #region (ReadEvents)
-        /*internal static void ReadEvents(QueryInfo info, EmeraArchiveEvents typeEvent, Type[]  typeFilter)
+        /*internal static void ReadEvents(QueryInfo info, Emera3ArchiveEvents typeEvent, Type[]  typeFilter)
         {
           if (DataBusSetting.StubData) return;
 
@@ -289,7 +289,7 @@ namespace Sys.Services.Drv.Emera3
           info.Log.Trace.Write(2, (l) => l.Info("Read events from {0}", from.ToString()));
 
           Byte depth = 1;
-          for (; depth <= EmeraRequest.DepthEvents; depth++)
+          for (; depth <= Emera3Request.DepthEvents; depth++)
           {
             if (info.Session.BeginOperation())
             {
@@ -325,7 +325,7 @@ namespace Sys.Services.Drv.Emera3
               if ((_break) || (!res.IsGood)) break;
               listEvent.Add(new HistoryEvent(info.Events, ev.EmeraEvent, ev.DateEvent, Quality.Good));
               listEventSrc.Add(ev);
-              if ((depth == EmeraRequest.DepthEvents) && (listEvent.Count != 0)) writeListEvent = true;
+              if ((depth == Emera3Request.DepthEvents) && (listEvent.Count != 0)) writeListEvent = true;
             }
           }
 
@@ -339,9 +339,9 @@ namespace Sys.Services.Drv.Emera3
         #region (ReadAllEvents)
         /*internal static void ReadAllEvents(QueryInfo info)
         {
-          IO.ReadEvents(info, EmeraArchiveEvents.EventAdjustments, Event.GetUsedTypes(EmeraArchiveEvents.EventAdjustments));
-          IO.ReadEvents(info, EmeraArchiveEvents.EventPhase, Event.GetUsedTypes(EmeraArchiveEvents.EventPhase));
-          IO.ReadEvents(info, EmeraArchiveEvents.EventStateEquipment, Event.GetUsedTypes(EmeraArchiveEvents.EventStateEquipment));
+          IO.ReadEvents(info, Emera3ArchiveEvents.EventAdjustments, Event.GetUsedTypes(Emera3ArchiveEvents.EventAdjustments));
+          IO.ReadEvents(info, Emera3ArchiveEvents.EventPhase, Event.GetUsedTypes(Emera3ArchiveEvents.EventPhase));
+          IO.ReadEvents(info, Emera3ArchiveEvents.EventStateEquipment, Event.GetUsedTypes(Emera3ArchiveEvents.EventStateEquipment));
         }*/
         #endregion
 

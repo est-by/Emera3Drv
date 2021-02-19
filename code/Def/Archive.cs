@@ -4,7 +4,7 @@ using Sys.Types.Components;
 
 namespace Sys.Services.Drv.Emera3.Def
 {
-    public enum EmeraArchiveEvents : byte
+    public enum Emera3ArchiveEvents : byte
     {
         EventPhase = 14,
         EventStateEquipment = 15,
@@ -27,22 +27,22 @@ namespace Sys.Services.Drv.Emera3.Def
             return result;
         }
 
-        public static Type[] GetUsedTypes(EmeraArchiveEvents ev)
+        public static Type[] GetUsedTypes(Emera3ArchiveEvents ev)
         {
             switch (ev)
             {
-                case EmeraArchiveEvents.EventPhase:
+                case Emera3ArchiveEvents.EventPhase:
                     return new Type[] { typeof(EvPhaseDrv) };
-                case EmeraArchiveEvents.EventStateEquipment:
+                case Emera3ArchiveEvents.EventStateEquipment:
                     return new Type[] { typeof(EvErrorDrv), };
-                case EmeraArchiveEvents.EventAdjustments:
+                case Emera3ArchiveEvents.EventAdjustments:
                     return new Type[] { typeof(EvOpenCoverDrv), typeof(EvCloseCoverDrv), typeof(EvAdjustTime), typeof(EvAdminDrv) };
                 default:
                     throw new Exception("Error type event");
             }
         }
 
-        internal Event(Sys.DateTimeZone dateEvent, int code, EmeraArchiveEvents evt)
+        internal Event(Sys.DateTimeZone dateEvent, int code, Emera3ArchiveEvents evt)
         {
             this.DateEvent = dateEvent;
             this.Code = code;
@@ -50,7 +50,7 @@ namespace Sys.Services.Drv.Emera3.Def
 
             switch (evt)
             {
-                case EmeraArchiveEvents.EventPhase:
+                case Emera3ArchiveEvents.EventPhase:
                     var ev = new EvPhaseDrv();
                     EventSource = "U";
                     ev.UA_On = SetPhase(ref EventSource, "A", code, 8);
@@ -66,7 +66,7 @@ namespace Sys.Services.Drv.Emera3.Def
                     this.EmeraEvent = ev;
                     break;
 
-                case EmeraArchiveEvents.EventStateEquipment:
+                case Emera3ArchiveEvents.EventStateEquipment:
                     var evDev = new EvErrorDrv();
                     int icode = (code >> 8);
                     if ((icode & 1) == 1)
@@ -129,7 +129,7 @@ namespace Sys.Services.Drv.Emera3.Def
                     EmeraEvent = evDev;
                     break;
 
-                case EmeraArchiveEvents.EventAdjustments:
+                case Emera3ArchiveEvents.EventAdjustments:
                     int ecode = (code >> 8);
                     if ((ecode & 1) == 1)
                     {
